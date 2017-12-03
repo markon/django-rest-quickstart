@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:9.6.5
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  web:
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    environment:
+      - POSTGRESQL_ADDR=db
+      - POSTGRESQL_PORT=5432
+      - POSTGRESQL_USER=postgres
+      - POSTGRESQL_PASSWORD=postgres
+      - POSTGRESQL_NAME=postgres
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
