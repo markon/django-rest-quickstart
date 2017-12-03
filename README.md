@@ -1,6 +1,6 @@
 # django-rest-quickstart
 
-A Django REST quickstart project with a simple RBAC example.
+A Django REST quickstart project with a simple RBAC / ACL example.
 
 # Requirements
 
