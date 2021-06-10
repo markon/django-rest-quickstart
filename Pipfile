@@ -4,7 +4,7 @@ verify_ssl = true
 
 [packages]
 psycopg2 = ">=2.7.3.1"
-Django = ">=1.11,<2.0"
+Django = ">=1.11,<3.0"
 django-guardian = ">=1.4.9"
 djangorestframework = ">=3.6.3"
 django-rest-swagger = ">=2.1.2"
