@@ -31,7 +31,7 @@ paths:
                 Get User Alice Smith:
                   value:
                     id: 142
-                    firstName: Alice
+                    firstName: John
                     lastName: Smith
                     email: alice.smith@gmail.com
                     dateOfBirth: '1997-10-31'
@@ -155,7 +155,7 @@ paths:
         in: path
         required: true
     get:
-      summary: Your GET endpoint
+      summary: Get Pets by ID
       tags: []
       responses: {}
       operationId: get-pets-petId
