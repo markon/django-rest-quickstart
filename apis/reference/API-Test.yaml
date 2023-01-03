@@ -205,5 +205,7 @@ components:
     Bearer Token:
       type: http
       scheme: bearer
+      description: This is your Bearer token visible in the management console.
 security:
   - Token: []
+x-internal: true
