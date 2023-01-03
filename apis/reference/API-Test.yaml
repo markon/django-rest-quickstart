@@ -8,6 +8,8 @@ info:
   description: API Protected with Bearer Token
 servers:
   - url: 'http://localhost:3000'
+  - url: 'https://api.eu.example.com'
+    description: EU
 paths:
   '/users/{userId}':
     parameters:
