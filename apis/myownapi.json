@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "Updated title of API (from apigit and now from local git)",
-    "description": "This is a sample description about this spec.\n\nI just updated this API from API Git.",
+    "description": "This is a sample description about this API specification.\n\nI just updated this API from API Git.",
     "termsOfService": "some url here",
     "contact": {
       "email": ""
