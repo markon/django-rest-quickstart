@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "sample api",
-    "description": "This is a sample description about this spec.",
-    "termsOfService": "",
+    "title": "Updated title of API (from apigit)",
+    "description": "This is a sample description about this spec.\n\nI just updated this API from API Git.",
+    "termsOfService": "some url here",
     "contact": {
       "email": ""
     },
@@ -24,9 +24,80 @@
       "description": ""
     }
   ],
-  "paths": {},
+  "paths": {
+    "/pets/{petId}": {
+      "get": {
+        "summary": "Get the petID",
+        "description": "",
+        "operationId": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {}
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "$ref",
+                  "$ref": "#/components/schemas/Pet"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Pet ID does not exist."
+          }
+        }
+      }
+    },
+    "/pets": {
+      "get": {
+        "summary": "get all the pets",
+        "description": "",
+        "operationId": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {},
+        "responses": {}
+      },
+      "post": {
+        "summary": "add a new pet",
+        "description": "",
+        "operationId": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {},
+        "responses": {}
+      }
+    }
+  },
   "components": {
-    "schemas": {},
+    "schemas": {
+      "Pet": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Pet ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "Pet's name"
+          },
+          "age": {
+            "type": "number",
+            "description": "Pet's age"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "age"
+        ]
+      }
+    },
     "securitySchemes": {}
   }
 }
