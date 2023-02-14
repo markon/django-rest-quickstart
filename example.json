@@ -32,7 +32,22 @@
         "tags": [],
         "parameters": [],
         "requestBody": {},
-        "responses": {}
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {
+                  "example1": {
+                    "value": "hello-world"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
