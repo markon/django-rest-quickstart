@@ -42,7 +42,7 @@
                 },
                 "examples": {
                   "example1": {
-                    "value": ""
+                    "value": "hello world"
                   }
                 }
               }
