@@ -24,7 +24,34 @@
       "description": ""
     }
   ],
-  "paths": {},
+  "paths": {
+    "/pets": {
+      "get": {
+        "description": "",
+        "operationId": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {},
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "description": "description here"
+                },
+                "examples": {
+                  "example1": {
+                    "value": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "components": {
     "schemas": {},
     "securitySchemes": {}
