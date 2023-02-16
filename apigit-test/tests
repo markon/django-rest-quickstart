@@ -1,1 +1,19 @@
-[]
+[
+	{
+		"type": "http",
+		"description": "a brief description",
+		"parameters": {
+			"method": "get",
+			"url": "https://{host}/pets",
+			"query": [],
+			"auth": {
+				"type": "none"
+			},
+			"header": [],
+			"body": {
+				"type": "none",
+				"data": ""
+			}
+		}
+	}
+]
